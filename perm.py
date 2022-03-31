@@ -1,8 +1,3 @@
-from hashlib import new
-from operator import le
-from re import S
-
-
 def perm(a):
     Ps = [str(a[0])]
     for i in a[1:]:
