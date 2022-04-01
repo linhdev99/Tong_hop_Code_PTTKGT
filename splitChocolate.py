@@ -44,7 +44,9 @@ def Split(arr):
         if ele > 0:
             temp = clone_arr(arr)
             temp[id] = temp[id] - 1
+            # print("temp = ", temp)
             newArr[id] = -1 * Split(temp)
+        # print("newArr = ", newArr)
     if 1 in newArr:
         return 1
     return -1
@@ -52,6 +54,7 @@ def Split(arr):
 
 def SplitChocolate(arr):
     arr = MergeSort(arr)
+    print("[a, b, c, d] =", arr)
     if arr[0] == arr[1] and arr[2] == arr[3]:
         return -1
     return Split(arr)
