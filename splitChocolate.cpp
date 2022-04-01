@@ -30,12 +30,10 @@ int Split(int arr[])
         if (arr[id] > 0)
         {
             int temp[4];
-            // copy(arr, arr, temp);
             for (int i = 0; i < 4; i++)
             {
                 temp[i] = arr[i];
             }
-            // cout << temp[0] << temp[1] << temp[2] << temp[3] << endl;
             temp[id] = temp[id] - 1;
             newArr[id] = -1 * Split(temp);
         }
