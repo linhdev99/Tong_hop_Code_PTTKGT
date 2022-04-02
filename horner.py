@@ -2,6 +2,7 @@ def horner1(P, x):
     res = P[0]
     for i in range(1, len(P)):
         res = x*res+P[i]
+        print(i, res)
     print(res)
 
 
@@ -12,7 +13,7 @@ def horner2(P, x):
     print(res)
 
 
-arr1 = [2, -1, 3, 1, -5]
+arr1 = [1,0,0,-2,0,1,-6]
 arr2 = [3, -1, 0, 2, 5]
 
 horner1(arr1, 3)
